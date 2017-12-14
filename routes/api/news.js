@@ -13,6 +13,7 @@ router.route("/")
 // Matches with "/api/news/:id", deletes a saved article
 router
   	.route("/:id")
+  	.get(newsController.findById)
   	.delete(newsController.remove);
 
 module.exports = router;

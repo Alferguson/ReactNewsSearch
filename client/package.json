@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "proxy": "http://localhost:3001/",
-  "main": "index.js",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.17.1",
@@ -12,7 +11,7 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "^1.0.17"
   },
-    "scripts": {
+  "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

@@ -15,25 +15,22 @@ import Search from "../../components/Search";
             <Jumbotron>
               <h1>What articles would you like to look at?</h1>
             </Jumbotron>
+
+
+
             <Search>
             </Search>
-
-
           </Col>
-          <Col size="md-6 sm-12">
-            <Jumbotron>
-              <h1>Results</h1>
-            </Jumbotron>
-            <Search>
-            </Search>
 
 
 
-          </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
               <h1>Saved articles</h1>
             </Jumbotron>
+
+
+            
             <Saved>
             </Saved>
 

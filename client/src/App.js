@@ -7,11 +7,7 @@ const App = () =>
     <Router>
         <div>
         <Nav />
-            <Switch>
-                <Route exact path="/" component={Main} />
-
-            </Switch>
+        <Route exact path="/" component={Main} />
         </div>
     </Router>;
-
 export default App;
