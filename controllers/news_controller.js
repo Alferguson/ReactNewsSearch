@@ -1,18 +1,8 @@
 const db = require("../models");
 const axios = require("axios");
-const authKey = "b9f91d369ff59547cd47b931d8cbc56b:0:74623931";
-const queryURLBase = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" + authKey + "&";
 
 // this is to intereact with the mongo database to show SAVED articles
 module.exports = {
-    // API call to NYT to show articles based on query
-    findNews: (req, res) => {
-        axios
-            .get(queryURLBase, { params: req.query })
-            .then(({ data: { results } }) => res.json(results))
-            .catch(err => res.status(422).json(err));
-
-    },
     // show all saved articles
     findAll: (req, res) => {
         db.News
