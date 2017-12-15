@@ -1,0 +1,13 @@
+const router = require("express").Router();
+const newsController = require("../../controllers/news_controller");
+
+// Matches with "/api/news", displays or creates saved articles
+router.route("/")
+  	.get(newsController.findAll)
+  	.post(newsController.create);
+
+// Matches with "/api/news/:id", deletes a saved article
+router.route("/:id")
+  	.delete(newsController.remove);
+
+module.exports = router;
